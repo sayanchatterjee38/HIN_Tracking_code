@@ -1,0 +1,63 @@
+#include "RiceStyle.h"
+
+void plotHist3D_Eff() {
+
+  RiceStyle();
+
+  gStyle->SetOptStat(0);
+  
+  //TFile *f = new TFile("/eos/cms/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun/MinBias_PbPb_5p36TeV_Hydjet_v1/GeneralTracks_MCRecodebug_HITrackingCorrection_nhits11_ptRes0p1_v1/231204_174202/0000/sum.root");
+  //TFile *f = new TFile("/eos/cms/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun/MinBias_PbPb_5p36TeV_Hydjet_v1/GeneralTracks_MCRecodebug_HITrackingCorrection_nhits0_ptRes0p1_v1/240124_180223/0000/sum.root");
+  TFile *f = new TFile("/eos/cms/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun/MinBias_PbPb_5p36TeV_Hydjet_v1/GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/240422_163408/0000/sum.root");
+  
+  char ndir[256] = "HITrackCorrections";
+  double ptmax = 300.;
+
+  // sim-to-reco hists
+  TH3F *hSim = (TH3F*) f->Get(Form("%s/hsim3D",ndir)); hSim->GetYaxis()->SetRangeUser(0.2,ptmax);
+  TH3F *hEff = (TH3F*) f->Get(Form("%s/heff3D",ndir)); hEff->GetYaxis()->SetRangeUser(0.2,ptmax);
+  TH3F *hMul = (TH3F*) f->Get(Form("%s/hmul3D",ndir)); hMul->GetYaxis()->SetRangeUser(0.2,ptmax);
+
+  // reco-to-sim hists
+  TH3F *hRec = (TH3F*) f->Get(Form("%s/hrec3D",ndir)); hRec->GetYaxis()->SetRangeUser(0.2,ptmax);
+  TH3F *hFak = (TH3F*) f->Get(Form("%s/hfak3D",ndir)); hFak->GetYaxis()->SetRangeUser(0.2,ptmax);
+  TH3F *hSec = (TH3F*) f->Get(Form("%s/hsec3D",ndir)); hSec->GetYaxis()->SetRangeUser(0.2,ptmax);
+
+
+  // ratio histograms
+  TH3F *rEff = (TH3F*) hEff->Clone("hEff_3D");
+  TH3F *rMul = (TH3F*) hMul->Clone("hMul_3D");
+  TH3F *rFak = (TH3F*) hFak->Clone("hFak_3D");
+  TH3F *rSec = (TH3F*) hSec->Clone("hSec_3D");
+
+  rEff->Divide(hSim);
+  rMul->Divide(hSim);
+  rFak->Divide(hRec);
+  rSec->Divide(hRec);
+
+  TFile *fout_1 = new TFile("files/General_TrackEff_3D_nhits0_V1.root","RECREATE");
+  rEff->Write();
+  rMul->Write();
+  rFak->Write();
+  rSec->Write();
+  //fout_1->Close();
+  //---------------------------------------------
+  //---------------------------------------------
+}
+
+
+void set_plot_style() {
+
+  // nicer colz plots
+
+  const Int_t NRGBs = 5;
+  const Int_t NCont = 255;
+
+  Double_t stops[NRGBs] = { 0.00, 0.34, 0.61, 0.84, 1.00 };
+  Double_t red[NRGBs]   = { 0.00, 0.00, 0.87, 1.00, 0.51 };
+  Double_t green[NRGBs] = { 0.00, 0.81, 1.00, 0.20, 0.00 };
+  Double_t blue[NRGBs]  = { 0.51, 1.00, 0.12, 0.00, 0.00 };
+  TColor::CreateGradientColorTable(NRGBs, stops, red, green, blue, NCont);
+  gStyle->SetNumberContours(NCont);
+
+}

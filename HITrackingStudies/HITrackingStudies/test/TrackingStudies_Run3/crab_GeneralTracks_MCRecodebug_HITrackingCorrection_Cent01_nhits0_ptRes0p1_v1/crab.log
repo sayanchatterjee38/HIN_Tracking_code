@@ -1,0 +1,141 @@
+DEBUG 2024-01-29 03:50:07.930 UTC: 	 CRAB Client version: v3.231101
+DEBUG 2024-01-29 03:50:07.930 UTC: 	 Running on: Linux lxplus806.cern.ch 4.18.0-513.11.1.el8_9.x86_64 #1 SMP Thu Dec 7 03:06:13 EST 2023 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux 8.9 (Ootpa)
+DEBUG 2024-01-29 03:50:07.930 UTC: 	 Executing command: 'submit'
+DEBUG 2024-01-29 03:50:07.931 UTC: 	 Found CRAB cache file /afs/cern.ch/user/r/rpradhan/.crab3
+INFO 2024-01-29 03:50:08.108 UTC: 	 Will use CRAB configuration file crab_config_MCRecoDebug.py
+DEBUG 2024-01-29 03:50:08.108 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-01-29 03:50:09.161 UTC: 	 Will use CRAB Analysis plugin (i.e. will run an analysis job type).
+DEBUG 2024-01-29 03:50:09.336 UTC: 	 Checking credentials
+DEBUG 2024-01-29 03:50:09.336 UTC: 	 Found proxy file /tmp/x509up_u119946
+DEBUG 2024-01-29 03:50:09.336 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-01-29 03:50:09.336 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u119946
+DEBUG 2024-01-29 03:50:09.699 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-01-29 03:50:09.699 UTC: 	 Getting proxy life time left
+DEBUG 2024-01-29 03:50:09.699 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u119946
+DEBUG 2024-01-29 03:50:10.048 UTC: 	 output : 690829
+690829
+
+ error: 
+ retcode : 0
+DEBUG 2024-01-29 03:50:10.049 UTC: 	 Proxy valid for 191:53:49 hours
+DEBUG 2024-01-29 03:50:10.049 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-01-29 03:50:10.098 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2024-01-29 03:50:10.098 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u119946
+DEBUG 2024-01-29 03:50:10.463 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+
+ error: 
+ retcode : 0
+DEBUG 2024-01-29 03:50:10.464 UTC: 	 Getting myproxy life time left for aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-01-29 03:50:10.464 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-01-29 03:50:10.742 UTC: 	 output : username: aedebe478e169b108aa6ac09e06ba386bd2a2409
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 614:01:55  (25.6 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-01-29 03:50:10.742 UTC: 	 Myproxy is valid: 2210460
+DEBUG 2024-01-29 03:50:10.742 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: aedebe478e169b108aa6ac09e06ba386bd2a2409  - validity: 25 days, 14:01:00
+DEBUG 2024-01-29 03:50:10.742 UTC: 	 Command use: submit
+DEBUG 2024-01-29 03:50:10.742 UTC: 	 Options use: ['-c', 'crab_config_MCRecoDebug.py']
+DEBUG 2024-01-29 03:50:10.742 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2024-01-29 03:50:10.816 UTC: 	 CRABClient version: v3.231101
+DEBUG 2024-01-29 03:50:10.816 UTC: 	 Instance is prod
+DEBUG 2024-01-29 03:50:10.816 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2024-01-29 03:50:10.817 UTC: 	 Command api workflow
+DEBUG 2024-01-29 03:50:10.817 UTC: 	 Started submission
+DEBUG 2024-01-29 03:50:10.817 UTC: 	 Working on /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1
+DEBUG 2024-01-29 03:50:10.817 UTC: 	 Encoded data for curl request: subresource=backendurls
+DEBUG 2024-01-29 03:50:11.062 UTC: 	 Loading required information from the environment
+DEBUG 2024-01-29 03:50:11.062 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1
+DEBUG 2024-01-29 03:50:11.062 UTC: 	 Loading required information from the environment
+DEBUG 2024-01-29 03:50:11.063 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1
+DEBUG 2024-01-29 03:50:11.063 UTC: 	 UNIQUE NAME: tarUUID d1fb9641-db12-4037-9c05-2dc9ed3faeb2 
+DEBUG 2024-01-29 03:50:11.063 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.requestName = 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1'
+config.General.transferOutputs = True
+config.General.transferLogs = True
+config.General.workArea = 'TrackingStudies_Run3'
+config.section_('JobType')
+config.JobType.pluginName = 'Analysis'
+config.JobType.psetName = 'run_PbPb_cfg_MCRecoDebug.py'
+config.JobType.inputFiles = ['CentralityTable_HFtowers200_HydjetDrum5F_v1302x04_RECODEBUG_MC2023.db']
+config.section_('Data')
+config.Data.splitting = 'FileBased'
+config.Data.totalUnits = 1000
+config.Data.outLFNDirBase = '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun'
+config.Data.inputDataset = '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER'
+config.Data.inputDBS = 'phys03'
+config.Data.unitsPerJob = 40
+config.Data.outputDatasetTag = 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1'
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2024-01-29 03:50:11.063 UTC: 	 self.config.JobType.psetName: run_PbPb_cfg_MCRecoDebug.py
+INFO 2024-01-29 03:50:11.063 UTC: 	 Importing CMSSW configuration run_PbPb_cfg_MCRecoDebug.py
+INFO 2024-01-29 03:50:18.964 UTC: 	 Finished importing CMSSW configuration run_PbPb_cfg_MCRecoDebug.py
+DEBUG 2024-01-29 03:50:18.964 UTC: 	 Writing CMSSW configuration to /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/PSet.py
+DEBUG 2024-01-29 03:50:18.987 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2024-01-29 03:50:18.987 UTC: 	 The following TFile output files will be collected: ['2023PbPb_RecoDebugMC_HiTrackingCorrection_nhits0_pTres0p1_GeneralTracks_NewCode.root']
+DEBUG 2024-01-29 03:50:18.987 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2024-01-29 03:50:18.987 UTC: 	 Loading required information from the environment
+DEBUG 2024-01-29 03:50:18.987 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1
+DEBUG 2024-01-29 03:50:18.988 UTC: 	 Making tarball in /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/d1fb9641-db12-4037-9c05-2dc9ed3faeb2default.tgz
+DEBUG 2024-01-29 03:50:18.988 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/bin
+DEBUG 2024-01-29 03:50:18.988 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/bin to tarball
+DEBUG 2024-01-29 03:50:18.990 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/python
+DEBUG 2024-01-29 03:50:18.990 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/python to tarball
+DEBUG 2024-01-29 03:50:19.707 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/cfipython
+DEBUG 2024-01-29 03:50:19.707 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/cfipython to tarball
+DEBUG 2024-01-29 03:50:19.866 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/lib
+DEBUG 2024-01-29 03:50:19.867 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/lib to tarball
+DEBUG 2024-01-29 03:50:20.948 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/biglib
+DEBUG 2024-01-29 03:50:20.948 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/biglib to tarball
+DEBUG 2024-01-29 03:50:20.949 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/module
+DEBUG 2024-01-29 03:50:20.949 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/config/SCRAM/hooks
+DEBUG 2024-01-29 03:50:20.949 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/config/SCRAM/hooks to tarball
+DEBUG 2024-01-29 03:50:24.499 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/AnalyzerCode/interface to tarball
+DEBUG 2024-01-29 03:50:24.511 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/AnalyzerCode/python to tarball
+DEBUG 2024-01-29 03:50:24.549 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/interface to tarball
+DEBUG 2024-01-29 03:50:24.552 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/python to tarball
+DEBUG 2024-01-29 03:50:26.011 UTC: 	 Adding file CentralityTable_HFtowers200_HydjetDrum5F_v1302x04_RECODEBUG_MC2023.db to tarball
+DEBUG 2024-01-29 03:50:26.358 UTC: 	 Uploading archive /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/d1fb9641-db12-4037-9c05-2dc9ed3faeb2default.tgz (266 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2024-01-29 03:50:26.443 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=c16f8fe6597594f6ded4e23309ed2f7c9698b5c861ed4c26534e522b51aef280.tar.gz
+DEBUG 2024-01-29 03:50:26.510 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rpradhan/sandboxes/c16f8fe6597594f6ded4e23309ed2f7c9698b5c861ed4c26534e522b51aef280.tar.gz" -F "AWSAccessKeyId=ab00fcc889f248c495d2875f15a3badb" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjQtMDEtMjlUMDQ6NTA6MjZaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicnByYWRoYW4vc2FuZGJveGVzL2MxNmY4ZmU2NTk3NTk0ZjZkZWQ0ZTIzMzA5ZWQyZjdjOTY5OGI1Yzg2MWVkNGMyNjUzNGU1MjJiNTFhZWYyODAudGFyLmd6In1dfQ==" -F "signature=nMhQsknZ4FDkTEWc4srweokjk+I=" -F "file=@/afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/d1fb9641-db12-4037-9c05-2dc9ed3faeb2default.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2024-01-29 03:50:26.585 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2024-01-29 03:50:26.585 UTC: 	 sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/d1fb9641-db12-4037-9c05-2dc9ed3faeb2default.tgz successully uploaded to S3
+DEBUG 2024-01-29 03:50:26.585 UTC: 	 Loading required information from the environment
+DEBUG 2024-01-29 03:50:26.585 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1
+DEBUG 2024-01-29 03:50:26.585 UTC: 	 Making tarball in /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/debugFiles.tgz
+DEBUG 2024-01-29 03:50:26.591 UTC: 	 Uploading archive /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2024-01-29 03:50:26.593 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=1cbbff5f883134a2e17f915c2866bad39d4d7f151d95cc5a31616bdfa17e892a.tar.gz
+DEBUG 2024-01-29 03:50:26.661 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rpradhan/sandboxes/1cbbff5f883134a2e17f915c2866bad39d4d7f151d95cc5a31616bdfa17e892a.tar.gz" -F "AWSAccessKeyId=ab00fcc889f248c495d2875f15a3badb" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjQtMDEtMjlUMDQ6NTA6MjZaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicnByYWRoYW4vc2FuZGJveGVzLzFjYmJmZjVmODgzMTM0YTJlMTdmOTE1YzI4NjZiYWQzOWQ0ZDdmMTUxZDk1Y2M1YTMxNjE2YmRmYTE3ZTg5MmEudGFyLmd6In1dfQ==" -F "signature=SK+gkg8riO2Ll16eA37HT2NvKt8=" -F "file=@/afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/debugFiles.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2024-01-29 03:50:26.689 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2024-01-29 03:50:26.689 UTC: 	 sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/inputs/debugFiles.tgz successully uploaded to S3
+DEBUG 2024-01-29 03:50:26.690 UTC: 	 Result uploading input files: c16f8fe6597594f6ded4e23309ed2f7c9698b5c861ed4c26534e522b51aef280.tar.gz 
+WARNING 2024-01-29 03:50:26.690 UTC: 	 Warning: The following output files will not be published, as they are not EDM files: ['2023PbPb_RecoDebugMC_HiTrackingCorrection_nhits0_pTres0p1_GeneralTracks_NewCode.root']
+INFO 2024-01-29 03:50:26.690 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2024-01-29 03:50:26.690 UTC: 	 Submitting {'dryrun': 0, 'workflow': 'crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1', 'saveoutput': 1, 'savelogsflag': 1, 'inputdata': '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER', 'primarydataset': '', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 40, 'totalunits': 1000, 'lfn': '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun', 'publication': 1, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 0, 'asyncdest': 'T2_CH_CERN', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': [], 'tfileoutfiles': ['2023PbPb_RecoDebugMC_HiTrackingCorrection_nhits0_pTres0p1_GeneralTracks_NewCode.root'], 'edmoutfiles': [], 'jobarch': 'el8_amd64_gcc11', 'jobsw': 'CMSSW_13_2_5_patch1', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': 'c16f8fe6597594f6ded4e23309ed2f7c9698b5c861ed4c26534e522b51aef280.tar.gz', 'debugfilename': '1cbbff5f883134a2e17f915c2866bad39d4d7f151d95cc5a31616bdfa17e892a.tar.gz'} 
+DEBUG 2024-01-29 03:50:26.690 UTC: 	 Encoded data for curl request: dryrun=0&workflow=crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1&saveoutput=1&savelogsflag=1&inputdata=%2FMinBias_PbPb_5p36TeV_Hydjet_v1%2Fsarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed%2FUSER&primarydataset=&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSReader&useparent=0&ignorelocality=0&splitalgo=FileBased&algoargs=40&totalunits=1000&lfn=%2Fstore%2Fgroup%2Fphys_heavyions%2Frpradhan%2FTrackingEffTables2022PbPbRun&publication=1&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&publishname2=GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1&jobtype=Analysis&generator=pythia&maxjobruntime=1250&numcores=1&maxmemory=2000&priority=10&nonprodsw=0&asyncdest=T2_CH_CERN&requireaccelerator=0&oneEventMode=0&ignoreglobalblacklist=0&partialdataset=0&jobarch=el8_amd64_gcc11&jobsw=CMSSW_13_2_5_patch1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2FS3%2Fcrabcache_prod&cachefilename=c16f8fe6597594f6ded4e23309ed2f7c9698b5c861ed4c26534e522b51aef280.tar.gz&debugfilename=1cbbff5f883134a2e17f915c2866bad39d4d7f151d95cc5a31616bdfa17e892a.tar.gz&tfileoutfiles=2023PbPb_RecoDebugMC_HiTrackingCorrection_nhits0_pTres0p1_GeneralTracks_NewCode.root
+DEBUG 2024-01-29 03:50:27.097 UTC: 	 Result: {'result': [{'RequestName': '240129_035027:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1'}]}
+INFO 2024-01-29 03:50:27.100 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2024-01-29 03:50:27.101 UTC: 	 Task name: 240129_035027:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1
+INFO 2024-01-29 03:50:27.101 UTC: 	 Project dir: TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1
+INFO 2024-01-29 03:50:27.101 UTC: 	 Please use ' crab status -d TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1 ' to check how the submission process proceeds.
+DEBUG 2024-01-29 03:50:27.101 UTC: 	 About to return
+INFO 2024-01-29 03:50:27.103 UTC: 	 Log file is /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent01_nhits0_ptRes0p1_v1/crab.log

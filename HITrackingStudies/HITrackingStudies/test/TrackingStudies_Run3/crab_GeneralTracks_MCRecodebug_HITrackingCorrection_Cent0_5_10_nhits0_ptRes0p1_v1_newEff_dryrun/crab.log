@@ -1,0 +1,1074 @@
+DEBUG 2024-04-22 16:33:59.244 UTC: 	 CRAB Client version: v3.240110
+DEBUG 2024-04-22 16:33:59.245 UTC: 	 Running on: Linux lxplus802.cern.ch 4.18.0-513.24.1.el8_9.x86_64 #1 SMP Thu Mar 14 14:20:09 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux 8.9 (Ootpa)
+DEBUG 2024-04-22 16:33:59.245 UTC: 	 Executing command: 'submit'
+DEBUG 2024-04-22 16:33:59.245 UTC: 	 Found CRAB cache file /afs/cern.ch/user/r/rpradhan/.crab3
+INFO 2024-04-22 16:33:59.245 UTC: 	 Will use CRAB configuration file crab_config_MCRecoDebug.py
+DEBUG 2024-04-22 16:33:59.246 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-04-22 16:33:59.248 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+DEBUG 2024-04-22 16:33:59.266 UTC: 	 Checking credentials
+DEBUG 2024-04-22 16:33:59.266 UTC: 	 Found proxy file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:33:59.266 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-04-22 16:33:59.266 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:33:59.898 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:33:59.898 UTC: 	 Getting proxy life time left
+DEBUG 2024-04-22 16:33:59.898 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:34:00.472 UTC: 	 output : 687097
+687097
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:34:00.472 UTC: 	 Proxy valid for 190:51:37 hours
+DEBUG 2024-04-22 16:34:00.472 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-04-22 16:34:00.525 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2024-04-22 16:34:00.526 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:34:01.131 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:34:01.132 UTC: 	 Getting myproxy life time left for aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-04-22 16:34:01.132 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-04-22 16:34:01.472 UTC: 	 output : username: aedebe478e169b108aa6ac09e06ba386bd2a2409
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 581:57:56  (24.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:34:01.472 UTC: 	 Myproxy is valid: 2095020
+DEBUG 2024-04-22 16:34:01.472 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: aedebe478e169b108aa6ac09e06ba386bd2a2409  - validity: 24 days, 5:57:00
+DEBUG 2024-04-22 16:34:01.472 UTC: 	 Command use: submit
+DEBUG 2024-04-22 16:34:01.472 UTC: 	 Options use: ['--dryrun', 'crab_config_MCRecoDebug.py']
+DEBUG 2024-04-22 16:34:01.472 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2024-04-22 16:34:01.540 UTC: 	 CRABClient version: v3.240110
+DEBUG 2024-04-22 16:34:01.540 UTC: 	 Instance is prod
+DEBUG 2024-04-22 16:34:01.540 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2024-04-22 16:34:01.540 UTC: 	 Command api workflow
+DEBUG 2024-04-22 16:34:01.540 UTC: 	 Started submission
+DEBUG 2024-04-22 16:34:01.540 UTC: 	 Working on /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:34:01.540 UTC: 	 Encoded data for curl request: subresource=backendurls
+DEBUG 2024-04-22 16:34:01.695 UTC: 	 Loading required information from the environment
+DEBUG 2024-04-22 16:34:01.695 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1
+DEBUG 2024-04-22 16:34:01.695 UTC: 	 Loading required information from the environment
+DEBUG 2024-04-22 16:34:01.695 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1
+DEBUG 2024-04-22 16:34:01.695 UTC: 	 UNIQUE NAME: tarUUID 000a7fa3-4295-48ba-a3ea-98c15975f0c6 
+DEBUG 2024-04-22 16:34:01.696 UTC: 	 self.config: from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.requestName = 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun'
+config.General.transferLogs = False
+config.General.workArea = 'TrackingStudies_Run3'
+config.General.transferOutputs = True
+config.section_('JobType')
+config.JobType.psetName = 'run_PbPb_cfg_MCRecoDebug.py'
+config.JobType.inputFiles = ['CentralityTable_HFtowers200_DataPbPb_periHYDJETshape_run3v1302x04_offline_Nominal.db']
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDBS = 'phys03'
+config.Data.outLFNDirBase = '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun'
+config.Data.inputDataset = '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER'
+config.Data.splitting = 'FileBased'
+config.Data.outputDatasetTag = 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun'
+config.Data.publication = False
+config.Data.totalUnits = 1000
+config.Data.unitsPerJob = 40
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2024-04-22 16:34:01.696 UTC: 	 self.config.JobType.psetName: run_PbPb_cfg_MCRecoDebug.py
+INFO 2024-04-22 16:34:01.696 UTC: 	 Importing CMSSW configuration run_PbPb_cfg_MCRecoDebug.py
+INFO 2024-04-22 16:34:04.237 UTC: 	 Finished importing CMSSW configuration run_PbPb_cfg_MCRecoDebug.py
+DEBUG 2024-04-22 16:34:04.237 UTC: 	 Writing CMSSW configuration to /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/PSet.py
+DEBUG 2024-04-22 16:34:04.280 UTC: 	 The following EDM output files will be collected: []
+DEBUG 2024-04-22 16:34:04.280 UTC: 	 The following TFile output files will be collected: ['2023PbPb_RecoDebugMC_nhits0_Test.root']
+DEBUG 2024-04-22 16:34:04.280 UTC: 	 The following user output files (not listed as PoolOuputModule or TFileService in the CMSSW PSet) will be collected: 
+DEBUG 2024-04-22 16:34:04.280 UTC: 	 Loading required information from the environment
+DEBUG 2024-04-22 16:34:04.280 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1
+DEBUG 2024-04-22 16:34:04.280 UTC: 	 Making tarball in /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/000a7fa3-4295-48ba-a3ea-98c15975f0c6default.tgz
+DEBUG 2024-04-22 16:34:04.281 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/bin
+DEBUG 2024-04-22 16:34:04.281 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/bin to tarball
+DEBUG 2024-04-22 16:34:04.303 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/python
+DEBUG 2024-04-22 16:34:04.303 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/python to tarball
+DEBUG 2024-04-22 16:34:04.352 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/cfipython
+DEBUG 2024-04-22 16:34:04.352 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/cfipython to tarball
+DEBUG 2024-04-22 16:34:04.425 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/lib
+DEBUG 2024-04-22 16:34:04.425 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/lib to tarball
+DEBUG 2024-04-22 16:34:05.318 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/biglib
+DEBUG 2024-04-22 16:34:05.318 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/biglib to tarball
+DEBUG 2024-04-22 16:34:05.321 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/module
+DEBUG 2024-04-22 16:34:05.321 UTC: 	 Checking directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/config/SCRAM/hooks
+DEBUG 2024-04-22 16:34:05.321 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/config/SCRAM/hooks to tarball
+DEBUG 2024-04-22 16:34:05.329 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/AnalyzerCode/interface to tarball
+DEBUG 2024-04-22 16:34:05.329 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/AnalyzerCode/python to tarball
+DEBUG 2024-04-22 16:34:05.334 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/interface to tarball
+DEBUG 2024-04-22 16:34:05.335 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/python to tarball
+DEBUG 2024-04-22 16:34:05.384 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/Configuration/data to tarball
+DEBUG 2024-04-22 16:34:05.388 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/Configuration/python to tarball
+DEBUG 2024-04-22 16:34:05.397 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/EGMAnalysis/data to tarball
+DEBUG 2024-04-22 16:34:05.400 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/EGMAnalysis/interface to tarball
+DEBUG 2024-04-22 16:34:05.403 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/EGMAnalysis/python to tarball
+DEBUG 2024-04-22 16:34:05.407 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/EventAnalysis/python to tarball
+DEBUG 2024-04-22 16:34:05.428 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/JetAnalysis/interface to tarball
+DEBUG 2024-04-22 16:34:05.430 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/JetAnalysis/python to tarball
+DEBUG 2024-04-22 16:34:05.440 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/MuonAnalysis/interface to tarball
+DEBUG 2024-04-22 16:34:05.443 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/MuonAnalysis/python to tarball
+DEBUG 2024-04-22 16:34:05.447 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/TrackAnalysis/interface to tarball
+DEBUG 2024-04-22 16:34:05.449 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/TrackAnalysis/python to tarball
+DEBUG 2024-04-22 16:34:05.453 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HeavyIonsAnalysis/ZDCAnalysis/python to tarball
+DEBUG 2024-04-22 16:34:05.460 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/RecoBTag/FeatureTools/interface to tarball
+DEBUG 2024-04-22 16:34:05.466 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/RecoBTag/FeatureTools/python to tarball
+DEBUG 2024-04-22 16:34:05.471 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/RecoHI/HiJetAlgos/interface to tarball
+DEBUG 2024-04-22 16:34:05.477 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/RecoHI/HiJetAlgos/python to tarball
+DEBUG 2024-04-22 16:34:05.490 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/RecoJets/JetProducers/data to tarball
+DEBUG 2024-04-22 16:34:05.492 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/RecoJets/JetProducers/interface to tarball
+DEBUG 2024-04-22 16:34:05.500 UTC: 	 Adding directory /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/RecoJets/JetProducers/python to tarball
+DEBUG 2024-04-22 16:34:05.620 UTC: 	 Adding file CentralityTable_HFtowers200_DataPbPb_periHYDJETshape_run3v1302x04_offline_Nominal.db to tarball
+DEBUG 2024-04-22 16:34:05.747 UTC: 	 Uploading archive /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/000a7fa3-4295-48ba-a3ea-98c15975f0c6default.tgz (2.468750.1 MB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2024-04-22 16:34:06.757 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=877a5fa7a89f4ba0b772cc2a1aa671cb2419534d05b93cd1e919a88b336550a1.tar.gz
+DEBUG 2024-04-22 16:34:06.837 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rpradhan/sandboxes/877a5fa7a89f4ba0b772cc2a1aa671cb2419534d05b93cd1e919a88b336550a1.tar.gz" -F "AWSAccessKeyId=e57ff634b5334df9819ae3f956de5ca6" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjQtMDQtMjJUMTc6MzQ6MDZaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicnByYWRoYW4vc2FuZGJveGVzLzg3N2E1ZmE3YTg5ZjRiYTBiNzcyY2MyYTFhYTY3MWNiMjQxOTUzNGQwNWI5M2NkMWU5MTlhODhiMzM2NTUwYTEudGFyLmd6In1dfQ==" -F "signature=46KP7QQ4v8VVlG9T747ux1dFlY0=" -F "file=@/afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/000a7fa3-4295-48ba-a3ea-98c15975f0c6default.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2024-04-22 16:34:08.014 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2024-04-22 16:34:08.014 UTC: 	 sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/000a7fa3-4295-48ba-a3ea-98c15975f0c6default.tgz successully uploaded to S3
+DEBUG 2024-04-22 16:34:08.014 UTC: 	 Loading required information from the environment
+DEBUG 2024-04-22 16:34:08.014 UTC: 	 Found CMSSW_13_2_5_patch1 for el8_amd64_gcc11 with base /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1
+DEBUG 2024-04-22 16:34:08.014 UTC: 	 Making tarball in /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/debugFiles.tgz
+DEBUG 2024-04-22 16:34:08.024 UTC: 	 Uploading archive /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/debugFiles.tgz (3 KB) to the CRAB cache. Using URI https://cmsweb.cern.ch/S3/crabcache_prod
+DEBUG 2024-04-22 16:34:08.030 UTC: 	 Encoded data for curl request: subresource=upload&objecttype=sandbox&tarballname=fd11bebd3b40535058bbaf12a66873bb1230244cc9c362c19b59ce1c2206aa40.tar.gz
+DEBUG 2024-04-22 16:34:08.095 UTC: 	 Will execute:
+curl -f -v -X POST  -H "User-Agent: CRAB" -F "key=rpradhan/sandboxes/fd11bebd3b40535058bbaf12a66873bb1230244cc9c362c19b59ce1c2206aa40.tar.gz" -F "AWSAccessKeyId=e57ff634b5334df9819ae3f956de5ca6" -F "policy=eyJleHBpcmF0aW9uIjogIjIwMjQtMDQtMjJUMTc6MzQ6MDhaIiwgImNvbmRpdGlvbnMiOiBbeyJidWNrZXQiOiAiY3JhYmNhY2hlX3Byb2QifSwgeyJrZXkiOiAicnByYWRoYW4vc2FuZGJveGVzL2ZkMTFiZWJkM2I0MDUzNTA1OGJiYWYxMmE2Njg3M2JiMTIzMDI0NGNjOWMzNjJjMTliNTljZTFjMjIwNmFhNDAudGFyLmd6In1dfQ==" -F "signature=Oamqnwbkx9nMW2jEBEpKstXZ4EA=" -F "file=@/afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/debugFiles.tgz" "https://s3.cern.ch/crabcache_prod"
+DEBUG 2024-04-22 16:34:08.201 UTC: 	 exitcode: 0
+stdout: b''
+DEBUG 2024-04-22 16:34:08.201 UTC: 	 sandbox /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/inputs/debugFiles.tgz successully uploaded to S3
+DEBUG 2024-04-22 16:34:08.201 UTC: 	 Result uploading input files: 877a5fa7a89f4ba0b772cc2a1aa671cb2419534d05b93cd1e919a88b336550a1.tar.gz 
+DEBUG 2024-04-22 16:34:08.201 UTC: 	 submit() - self.configuration from WMCore.Configuration import Configuration
+config = Configuration()
+config.section_('General')
+config.General.requestName = 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun'
+config.General.transferLogs = False
+config.General.workArea = 'TrackingStudies_Run3'
+config.General.transferOutputs = True
+config.section_('JobType')
+config.JobType.psetName = 'run_PbPb_cfg_MCRecoDebug.py'
+config.JobType.inputFiles = ['CentralityTable_HFtowers200_DataPbPb_periHYDJETshape_run3v1302x04_offline_Nominal.db']
+config.JobType.pluginName = 'Analysis'
+config.section_('Data')
+config.Data.inputDBS = 'phys03'
+config.Data.outLFNDirBase = '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun'
+config.Data.inputDataset = '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER'
+config.Data.splitting = 'FileBased'
+config.Data.outputDatasetTag = 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun'
+config.Data.publication = False
+config.Data.totalUnits = 1000
+config.Data.unitsPerJob = 40
+config.section_('Site')
+config.Site.storageSite = 'T2_CH_CERN'
+
+DEBUG 2024-04-22 16:34:08.201 UTC: 	 submit() - self.configreq {'dryrun': 1, 'workflow': 'crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun', 'saveoutput': 1, 'savelogsflag': 0, 'inputdata': '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER', 'primarydataset': '', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 40, 'totalunits': 1000, 'lfn': '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun', 'publication': 0, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 0, 'asyncdest': 'T2_CH_CERN', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': []}
+DEBUG 2024-04-22 16:34:08.201 UTC: 	 submit() - jobconfig {'addoutputfiles': [], 'tfileoutfiles': ['2023PbPb_RecoDebugMC_nhits0_Test.root'], 'edmoutfiles': [], 'jobarch': 'el8_amd64_gcc11', 'jobsw': 'CMSSW_13_2_5_patch1', 'inputdata': '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': '877a5fa7a89f4ba0b772cc2a1aa671cb2419534d05b93cd1e919a88b336550a1.tar.gz', 'debugfilename': 'fd11bebd3b40535058bbaf12a66873bb1230244cc9c362c19b59ce1c2206aa40.tar.gz', 'jobtype': 'Analysis'}
+INFO 2024-04-22 16:34:08.201 UTC: 	 Sending the request to the server at cmsweb.cern.ch
+DEBUG 2024-04-22 16:34:08.202 UTC: 	 Submitting {'dryrun': 1, 'workflow': 'crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun', 'saveoutput': 1, 'savelogsflag': 0, 'inputdata': '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER', 'primarydataset': '', 'nonvaliddata': 0, 'userfiles': [], 'dbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'useparent': 0, 'ignorelocality': 0, 'splitalgo': 'FileBased', 'algoargs': 40, 'totalunits': 1000, 'lfn': '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun', 'publication': 0, 'publishdbsurl': 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'publishname2': 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun', 'jobtype': 'Analysis', 'generator': 'pythia', 'addoutputfiles': [], 'maxjobruntime': 1250, 'numcores': 1, 'maxmemory': 2000, 'priority': 10, 'nonprodsw': 0, 'asyncdest': 'T2_CH_CERN', 'requireaccelerator': 0, 'oneEventMode': 0, 'extrajdl': [], 'ignoreglobalblacklist': 0, 'partialdataset': 0, 'inputblocks': [], 'tfileoutfiles': ['2023PbPb_RecoDebugMC_nhits0_Test.root'], 'edmoutfiles': [], 'jobarch': 'el8_amd64_gcc11', 'jobsw': 'CMSSW_13_2_5_patch1', 'cacheurl': 'https://cmsweb.cern.ch/S3/crabcache_prod', 'cachefilename': '877a5fa7a89f4ba0b772cc2a1aa671cb2419534d05b93cd1e919a88b336550a1.tar.gz', 'debugfilename': 'fd11bebd3b40535058bbaf12a66873bb1230244cc9c362c19b59ce1c2206aa40.tar.gz'} 
+DEBUG 2024-04-22 16:34:08.202 UTC: 	 Encoded data for curl request: dryrun=1&workflow=crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun&saveoutput=1&savelogsflag=0&inputdata=%2FMinBias_PbPb_5p36TeV_Hydjet_v1%2Fsarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed%2FUSER&primarydataset=&nonvaliddata=0&dbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSReader&useparent=0&ignorelocality=0&splitalgo=FileBased&algoargs=40&totalunits=1000&lfn=%2Fstore%2Fgroup%2Fphys_heavyions%2Frpradhan%2FTrackingEffTables2022PbPbRun&publication=0&publishdbsurl=https%3A%2F%2Fcmsweb.cern.ch%2Fdbs%2Fprod%2Fphys03%2FDBSWriter&publishname2=GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun&jobtype=Analysis&generator=pythia&maxjobruntime=1250&numcores=1&maxmemory=2000&priority=10&nonprodsw=0&asyncdest=T2_CH_CERN&requireaccelerator=0&oneEventMode=0&ignoreglobalblacklist=0&partialdataset=0&jobarch=el8_amd64_gcc11&jobsw=CMSSW_13_2_5_patch1&cacheurl=https%3A%2F%2Fcmsweb.cern.ch%2FS3%2Fcrabcache_prod&cachefilename=877a5fa7a89f4ba0b772cc2a1aa671cb2419534d05b93cd1e919a88b336550a1.tar.gz&debugfilename=fd11bebd3b40535058bbaf12a66873bb1230244cc9c362c19b59ce1c2206aa40.tar.gz&tfileoutfiles=2023PbPb_RecoDebugMC_nhits0_Test.root
+DEBUG 2024-04-22 16:34:08.379 UTC: 	 Result: {'result': [{'RequestName': '240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun'}]}
+INFO 2024-04-22 16:34:08.381 UTC: 	 Success: Your task has been delivered to the prod CRAB3 server.
+INFO 2024-04-22 16:34:08.381 UTC: 	 Task name: 240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+INFO 2024-04-22 16:34:08.381 UTC: 	 Project dir: TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+INFO 2024-04-22 16:34:08.381 UTC: 	 Waiting for task to be processed
+DEBUG 2024-04-22 16:34:08.381 UTC: 	 Start time:2024-04-22 18:34:08
+DEBUG 2024-04-22 16:34:08.381 UTC: 	 Max wait time: 900 s until : 2024-04-22 18:49:08
+INFO 2024-04-22 16:34:08.381 UTC: 	 Checking task status
+DEBUG 2024-04-22 16:34:08.381 UTC: 	 Looking up status of task 240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:34:08.382 UTC: 	 Encoded data for curl request: subresource=search&workflow=240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:34:08.454 UTC: 	 Query Time: 2024-04-22 18:34:08 Task status: NEW
+INFO 2024-04-22 16:34:08.454 UTC: 	 Task status: NEW
+INFO 2024-04-22 16:34:08.454 UTC: 	 Please wait...
+DEBUG 2024-04-22 16:34:38.485 UTC: 	 Looking up status of task 240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:34:38.485 UTC: 	 Encoded data for curl request: subresource=search&workflow=240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:34:38.543 UTC: 	 Query Time: 2024-04-22 18:34:38 Task status: NEW
+INFO 2024-04-22 16:34:38.543 UTC: 	 Task status: NEW
+INFO 2024-04-22 16:34:38.543 UTC: 	 Please wait...
+DEBUG 2024-04-22 16:35:08.572 UTC: 	 Looking up status of task 240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:35:08.572 UTC: 	 Encoded data for curl request: subresource=search&workflow=240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:35:08.631 UTC: 	 Query Time: 2024-04-22 18:35:08 Task status: QUEUED
+INFO 2024-04-22 16:35:08.631 UTC: 	 Task status: QUEUED
+INFO 2024-04-22 16:35:08.632 UTC: 	 Please wait...
+DEBUG 2024-04-22 16:35:38.652 UTC: 	 Looking up status of task 240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:35:38.653 UTC: 	 Encoded data for curl request: subresource=search&workflow=240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:35:38.717 UTC: 	 Query Time: 2024-04-22 18:35:38 Task status: UPLOADED
+INFO 2024-04-22 16:35:38.717 UTC: 	 Task status: UPLOADED
+DEBUG 2024-04-22 16:35:38.717 UTC: 	 Ended submission process.
+INFO 2024-04-22 16:35:38.718 UTC: 	 Created temporary directory for dry run sandbox in /tmp/rpradhan/tmp8e9tfofg
+DEBUG 2024-04-22 16:35:38.718 UTC: 	 Encoded data for curl request: subresource=download&objecttype=runtimefiles&taskname=240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:35:38.766 UTC: 	 PreSignedUrl to download runtimefiles received OK
+DEBUG 2024-04-22 16:35:38.768 UTC: 	 Will execute:
+wget -Sq -O /tmp/rpradhan/tmp8e9tfofg/dry-run-sandbox.tar.gz  "https://s3.cern.ch/crabcache_prod/rpradhan/240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/runtimefiles?AWSAccessKeyId=e57ff634b5334df9819ae3f956de5ca6&Signature=%2FdBMz496yEbUQdTjowjim2n5W6g%3D&Expires=1713807338"
+DEBUG 2024-04-22 16:35:38.996 UTC: 	 exitcode: 0
+stdout: b''
+INFO 2024-04-22 16:35:39.581 UTC: 	 Executing test, please wait...
+DEBUG 2024-04-22 16:36:20.325 UTC: 	 /tmp/rpradhan/tmp8e9tfofg
+total 18M
+-rw-r--r--. 1 rpradhan zh 650K Mar 26 00:02 WMCore.zip
+-rw-r--r--. 1 rpradhan zh  14K Mar 26 00:02 TweakPSet.py
+-rw-r--r--. 1 rpradhan zh  49K Mar 26 00:02 ServerUtilities.py
+-rw-r--r--. 1 rpradhan zh  11K Mar 26 00:02 RESTInteractions.py
+-rw-r--r--. 1 rpradhan zh  38K Mar 26 00:02 CMSRunAnalysis.py
+-rw-r--r--. 1 rpradhan zh 4.5K Mar 26 00:02 CMSGroupMapper.py
+drwxr-xr-x. 3 rpradhan zh 4.0K Apr 22 17:44 lib
+drwxr-xr-x. 3 rpradhan zh 4.0K Apr 22 17:44 cfipython
+drwxr-xr-x. 3 rpradhan zh 4.0K Apr 22 17:44 bin
+drwxr-xr-x. 3 rpradhan zh 4.0K Apr 22 17:44 biglib
+drwxr-xr-x. 8 rpradhan zh 4.0K Apr 22 17:54 python
+-rw-r--r--. 1 rpradhan zh  76K Apr 22 18:20 CentralityTable_HFtowers200_DataPbPb_periHYDJETshape_run3v1302x04_offline_Nominal.db
+-rw-r--r--. 1 rpradhan zh  101 Apr 22 18:34 PSet.py
+-rw-r--r--. 1 rpradhan zh 123K Apr 22 18:34 PSet.pkl
+-rw-r--r--. 1 rpradhan zh  62K Apr 22 18:34 PSetDump.py
+-rw-r--r--. 1 rpradhan zh 2.5M Apr 22 18:34 sandbox.tar.gz
+-rw-r--r--. 1 rpradhan zh 3.8K Apr 22 18:34 debug_files.tar.gz
+-rw-r--r--. 1 rpradhan zh    2 Apr 22 18:35 input_dataset_lumis.json
+-rw-r--r--. 1 rpradhan zh    2 Apr 22 18:35 input_dataset_duplicate_lumis.json
+-rwxr-xr-x. 1 rpradhan zh 5.4K Apr 22 18:35 submit_env.sh
+-rwxr-xr-x. 1 rpradhan zh 9.9K Apr 22 18:35 gWMS-CMSRunAnalysis.sh
+-rwxr-xr-x. 1 rpradhan zh 2.4K Apr 22 18:35 CMSRunAnalysis.sh
+-rw-r--r--. 1 rpradhan zh  349 Apr 22 18:35 cmscp.sh
+-rwxr-xr-x. 1 rpradhan zh  79K Apr 22 18:35 cmscp.py
+-rwxr-xr-x. 1 rpradhan zh 3.6K Apr 22 18:35 dag_bootstrap.sh
+-rw-r--r--. 1 rpradhan zh  23K Apr 22 18:35 AdjustSites.py
+-rw-r--r--. 1 rpradhan zh 624K Apr 22 18:35 CMSRunAnalysis.tar.gz
+-rw-r--r--. 1 rpradhan zh 835K Apr 22 18:35 TaskManagerRun.tar.gz
+drwxr-xr-x. 2 rpradhan zh 4.0K Apr 22 18:35 debug
+-rw-r--r--. 1 rpradhan zh  645 Apr 22 18:35 run_and_lumis.tar.gz
+-rw-r--r--. 1 rpradhan zh 4.0K Apr 22 18:35 input_files.tar.gz
+-rw-r--r--. 1 rpradhan zh 4.1M Apr 22 18:35 datadiscovery.pkl
+-rw-r--r--. 1 rpradhan zh 2.4K Apr 22 18:35 taskworkerconfig.pkl
+-rw-r--r--. 1 rpradhan zh 3.1K Apr 22 18:35 taskinformation.pkl
+-rw-r--r--. 1 rpradhan zh  304 Apr 22 18:35 site.ad.json
+-rw-r--r--. 1 rpradhan zh 1.9K Apr 22 18:35 site.ad
+-rw-r--r--. 1 rpradhan zh  54K Apr 22 18:35 RunJobs.dag
+-rw-r--r--. 1 rpradhan zh 7.3K Apr 22 18:35 Job.submit
+-rw-r--r--. 1 rpradhan zh  30K Apr 22 18:35 input_args.json
+-rw-r--r--. 1 rpradhan zh 4.3M Apr 22 18:35 InputFiles.tar.gz
+-rw-r--r--. 1 rpradhan zh  267 Apr 22 18:35 splitting-summary.json
+-rw-r--r--. 1 rpradhan zh 4.3M Apr 22 18:35 dry-run-sandbox.tar.gz
+drwxr-xr-x. 3 rpradhan zh 4.0K Apr 22 18:35 config
+drwxr-xr-x. 7 rpradhan zh 4.0K Apr 22 18:35 src
+======== CMSRunAnalysis.sh STARTING at Mon Apr 22 16:35:39 GMT 2024 ========
+Local time : Mon Apr 22 18:35:39 CEST 2024
+Current system : Linux lxplus802.cern.ch 4.18.0-513.24.1.el8_9.x86_64 #1 SMP Thu Mar 14 14:20:09 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux
+Current processor: model name	: Intel Xeon Processor (Cascadelake)
+======== CMS environment load starting at Mon Apr 22 16:35:39 GMT 2024 ========
+WN missing VO_CMS_SW_DIR/OSG_APP/CVMFS environment variable, forcing it to CVMFS=/cvmfs/cms.cern.ch
+CRAB job bootstrap: thinks it found the correct CMSSW setup script
+======== CMS environment load finished at Mon Apr 22 16:35:40 GMT 2024 ========
+
+======== python bootstrap for stageout at Mon Apr 22 16:35:40 GMT 2024 STARTING ========
+Job requires OS: rhel7, thus setting ScramArch to: rhel7_x86_64
+WMAgent bootstrap: COMP Python path is: /cvmfs/cms.cern.ch/COMP/rhel7_x86_64/external
+WMAgent bootstrap: latest python3 release is: 3.8.2-comp
+Sourcing python future library from: /cvmfs/cms.cern.ch/COMP/rhel7_x86_64/external/py3-future/0.18.2/etc/profile.d/init.sh
+WMAgent bootstrap: found python3 at..
+/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/python3/3.8.2-comp/bin/python3
+======== python bootstrap for stageout at Mon Apr 22 16:35:40 GMT 2024 FINISHED ========
+==== Make sure /afs/cern.ch/user/r/rpradhan is defined ====
+======== Current environment dump STARTING ========
+== ENV: CONDA_SHLVL=0
+== ENV: LC_ALL=en_US.utf-8
+== ENV: JOBSTARTDIR=/tmp/rpradhan/tmp8e9tfofg
+== ENV: LD_LIBRARY_PATH=/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-future/0.18.2/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-setuptools/39.2.0/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/python3/3.8.2-comp/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/python3/3.8.2-comp/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/db6/6.0.30/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/xz/5.2.2/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/libffi/3.2.1/lib64:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/libuuid/2.22.2/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/gdbm/1.12/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/sqlite/3.8.10.2/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/bz2lib/1.0.6/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/expat/2.0.1/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/zlib/1.2.8/lib:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/gcc/6.3.0/lib64:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/gcc/6.3.0/lib
+== ENV: LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+== ENV: RUCIO_HOME=/cvmfs/cms.cern.ch/rucio/x86_64/rhel8/py3/current
+== ENV: SSH_CONNECTION=131.193.237.112
+== ENV: 51981
+== ENV: 188.184.94.6
+== ENV: 22
+== ENV: _CONDOR_JOB_AD=Job.submit
+== ENV: SITECONFIG_PATH=/cvmfs/cms.cern.ch/SITECONF/local
+== ENV: MODULES_RUN_QUARANTINE=LD_LIBRARY_PATH
+== ENV: LD_PRELOAD
+== ENV: LANG=
+== ENV: CRAB_TASKMANAGER_TARBALL=local
+== ENV: OS_AUTH_URL=https://keystone.cern.ch/v3
+== ENV: HISTCONTROL=ignoredups
+== ENV: CRAB_RUNTIME_TARBALL=local
+== ENV: GUESTFISH_RESTORE=\e[0m
+== ENV: OS_PROJECT_DOMAIN_ID=default
+== ENV: HOSTNAME=lxplus802.cern.ch
+== ENV: OLDPWD=/afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3
+== ENV: EDITOR=/bin/nano
+== ENV: -w
+== ENV: OS_PROTOCOL=kerberos
+== ENV: GUESTFISH_INIT=\e[1;34m
+== ENV: KDEDIRS=/usr
+== ENV: CVSROOT=:gserver:cmssw.cvs.cern.ch:/local/reps/CMSSW
+== ENV: CASTOR_HOME=/castor/cern.ch/user/r/rpradhan
+== ENV: S_COLORS=auto
+== ENV: which_declare=declare
+== ENV: -f
+== ENV: XDG_SESSION_ID=6438
+== ENV: MODULES_CMD=/usr/share/Modules/libexec/modulecmd.tcl
+== ENV: SCRAM_ARCH=el8_amd64_gcc11
+== ENV: USER=rpradhan
+== ENV: GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\]
+== ENV: SELINUX_ROLE_REQUESTED=
+== ENV: OS_REGION_NAME=cern
+== ENV: OS_PROJECT_NAME=Personal
+== ENV: rpradhan
+== ENV: PWD=/tmp/rpradhan/tmp8e9tfofg
+== ENV: MYPROXY_SERVER=myproxy.cern.ch
+== ENV: SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+== ENV: HOME=/afs/cern.ch/user/r/rpradhan
+== ENV: LC_CTYPE=en_US.UTF-8
+== ENV: CRABCLIENT_TYPE=prod
+== ENV: SSH_CLIENT=131.193.237.112
+== ENV: 51981
+== ENV: 22
+== ENV: OS_MUTUAL_AUTH=disabled
+== ENV: SELINUX_LEVEL_REQUESTED=
+== ENV: EOS_MGM_URL=root://eoscms.cern.ch
+== ENV: KRB5CCNAME=FILE:/run/user/119946/krb5cc
+== ENV: CMS_PATH=/cvmfs/cms.cern.ch
+== ENV: TEXINPUTS=:/cvmfs/cms.cern.ch/latex/styles
+== ENV: CVMFS=/cvmfs/cms.cern.ch
+== ENV: TMPDIR=/tmp/rpradhan
+== ENV: OS_IDENTITY_API_VERSION=3
+== ENV: LOADEDMODULES=
+== ENV: SSH_TTY=/dev/pts/39
+== ENV: CRAB3_RUNTIME_DEBUG=True
+== ENV: MAIL=/var/spool/mail/rpradhan
+== ENV: OS_AUTH_TYPE=v3fedkerb
+== ENV: KUBECACHEDIR=/run/user/119946/kubecache
+== ENV: TERM=xterm-256color
+== ENV: SHELL=/bin/bash
+== ENV: OS_IDENTITY_PROVIDER=sssd
+== ENV: XRD_NETWORKSTACK=IPv4
+== ENV: SELINUX_USE_CURRENT_RANGE=
+== ENV: STAGE_HOST=castorcms
+== ENV: SHLVL=4
+== ENV: PYTHONPATH=/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-future/0.18.2/lib/python3.8/site-packages:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-setuptools/39.2.0/lib/python3.8/site-packages:/cvmfs/cms.cern.ch/rucio/x86_64/rhel8/py3/current/lib/python3.6/site-packages:/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib:/cvmfs/cms.cern.ch/share/cms/crab/1.0/lib/prod
+== ENV: MANPATH=/cvmfs/cms.cern.ch/share/man:/cvmfs/cms.cern.ch/share/lcg/SCRAMV1/V2_2_9_pre20/docs/man:/cvmfs/cms.cern.ch/share/man:/cvmfs/cms.cern.ch/share/man:/opt/puppetlabs/puppet/share/man
+== ENV: REQUIRED_OS=rhel7
+== ENV: MODULEPATH=/etc/scl/modulefiles:/usr/share/Modules/modulefiles:/etc/modulefiles:/usr/share/modulefiles
+== ENV: OS_COMPUTE_API_VERSION=2.72
+== ENV: LOGNAME=rpradhan
+== ENV: DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/119946/bus
+== ENV: XDG_RUNTIME_DIR=/run/user/119946
+== ENV: MODULEPATH_modshare=/usr/share/Modules/modulefiles:2:/etc/modulefiles:2:/usr/share/modulefiles:2
+== ENV: PATH=/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-future/0.18.2/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-setuptools/39.2.0/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/python3/3.8.2-comp/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/python3/3.8.2-comp/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/db6/6.0.30/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/xz/5.2.2/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/gdbm/1.12/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/sqlite/3.8.10.2/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/bz2lib/1.0.6/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/expat/2.0.1/bin:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/gcc/6.3.0/bin:/afs/cern.ch/cms/caf/scripts:/cvmfs/cms.cern.ch/common:/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/bin:/afs/cern.ch/user/r/rpradhan/.local/bin:/cvmfs/cms-bril.cern.ch/brilconda/bin:/afs/cern.ch/cms/caf/scripts:/cvmfs/cms.cern.ch/common:/afs/cern.ch/cms/caf/scripts:/cvmfs/cms.cern.ch/common:/usr/sue/bin:/usr/share/Modules/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/puppetlabs/bin
+== ENV: GUESTFISH_OUTPUT=\e[0m
+== ENV: MODULESHOME=/usr/share/Modules
+== ENV: HISTSIZE=1000
+== ENV: LCG_GFAL_INFOSYS=lcg-bdii.cern.ch:2170
+== ENV: CVS_RSH=ssh
+== ENV: LESSOPEN=||/usr/bin/lesspipe.sh
+== ENV: %s
+== ENV: OS_VOLUME_API_VERSION=3
+== ENV: BASH_FUNC_which%%=()
+== ENV: {
+== ENV: (
+== ENV: alias;
+== ENV: eval
+== ENV: ${which_declare}
+== ENV: )
+== ENV: |
+== ENV: /usr/bin/which
+== ENV: --tty-only
+== ENV: --read-alias
+== ENV: --read-functions
+== ENV: --show-tilde
+== ENV: --show-dot
+== ENV: $@
+== ENV: }
+== ENV: BASH_FUNC_cmsrel%%=()
+== ENV: {
+== ENV: scramv1
+== ENV: project
+== ENV: CMSSW
+== ENV: $@
+== ENV: }
+== ENV: BASH_FUNC_module%%=()
+== ENV: {
+== ENV: _module_raw
+== ENV: "$@"
+== ENV: 2>&1
+== ENV: }
+== ENV: BASH_FUNC__module_raw%%=()
+== ENV: {
+== ENV: unset
+== ENV: _mlshdbg;
+== ENV: if
+== ENV: [
+== ENV: "${MODULES_SILENT_SHELL_DEBUG:-0}"
+== ENV: =
+== ENV: '1'
+== ENV: ];
+== ENV: then
+== ENV: case
+== ENV: "$-"
+== ENV: in
+== ENV: *v*x*)
+== ENV: set
+== ENV: +vx;
+== ENV: _mlshdbg='vx'
+== ENV: ;;
+== ENV: *v*)
+== ENV: set
+== ENV: +v;
+== ENV: _mlshdbg='v'
+== ENV: ;;
+== ENV: *x*)
+== ENV: set
+== ENV: +x;
+== ENV: _mlshdbg='x'
+== ENV: ;;
+== ENV: *)
+== ENV: _mlshdbg=''
+== ENV: ;;
+== ENV: esac;
+== ENV: fi;
+== ENV: unset
+== ENV: _mlre
+== ENV: _mlIFS;
+== ENV: if
+== ENV: [
+== ENV: -n
+== ENV: "${IFS+x}"
+== ENV: ];
+== ENV: then
+== ENV: _mlIFS=$IFS;
+== ENV: fi;
+== ENV: IFS='
+== ENV: ';
+== ENV: for
+== ENV: _mlv
+== ENV: in
+== ENV: ${MODULES_RUN_QUARANTINE:-};
+== ENV: do
+== ENV: if
+== ENV: [
+== ENV: "${_mlv}"
+== ENV: =
+== ENV: "${_mlv##*[!A-Za-z0-9_]}"
+== ENV: -a
+== ENV: "${_mlv}"
+== ENV: =
+== ENV: "${_mlv#[0-9]}"
+== ENV: ];
+== ENV: then
+== ENV: if
+== ENV: [
+== ENV: -n
+== ENV: "`eval
+== ENV: 'echo
+== ENV: ${'$_mlv'+x}'`"
+== ENV: ];
+== ENV: then
+== ENV: _mlre="${_mlre:-}${_mlv}_modquar='`eval
+== ENV: 'echo
+== ENV: ${'$_mlv'}'`'
+== ENV: ";
+== ENV: fi;
+== ENV: _mlrv="MODULES_RUNENV_${_mlv}";
+== ENV: _mlre="${_mlre:-}${_mlv}='`eval
+== ENV: 'echo
+== ENV: ${'$_mlrv':-}'`'
+== ENV: ";
+== ENV: fi;
+== ENV: done;
+== ENV: if
+== ENV: [
+== ENV: -n
+== ENV: "${_mlre:-}"
+== ENV: ];
+== ENV: then
+== ENV: eval
+== ENV: `eval
+== ENV: ${_mlre}
+== ENV: /usr/bin/tclsh
+== ENV: /usr/share/Modules/libexec/modulecmd.tcl
+== ENV: bash
+== ENV: '"$@"'`;
+== ENV: else
+== ENV: eval
+== ENV: `/usr/bin/tclsh
+== ENV: /usr/share/Modules/libexec/modulecmd.tcl
+== ENV: bash
+== ENV: "$@"`;
+== ENV: fi;
+== ENV: _mlstatus=$?;
+== ENV: if
+== ENV: [
+== ENV: -n
+== ENV: "${_mlIFS+x}"
+== ENV: ];
+== ENV: then
+== ENV: IFS=$_mlIFS;
+== ENV: else
+== ENV: unset
+== ENV: IFS;
+== ENV: fi;
+== ENV: unset
+== ENV: _mlre
+== ENV: _mlv
+== ENV: _mlrv
+== ENV: _mlIFS;
+== ENV: if
+== ENV: [
+== ENV: -n
+== ENV: "${_mlshdbg:-}"
+== ENV: ];
+== ENV: then
+== ENV: set
+== ENV: -$_mlshdbg;
+== ENV: fi;
+== ENV: unset
+== ENV: _mlshdbg;
+== ENV: return
+== ENV: $_mlstatus
+== ENV: }
+== ENV: BASH_FUNC_switchml%%=()
+== ENV: {
+== ENV: typeset
+== ENV: swfound=1;
+== ENV: if
+== ENV: [
+== ENV: "${MODULES_USE_COMPAT_VERSION:-0}"
+== ENV: =
+== ENV: '1'
+== ENV: ];
+== ENV: then
+== ENV: typeset
+== ENV: swname='main';
+== ENV: if
+== ENV: [
+== ENV: -e
+== ENV: /usr/share/Modules/libexec/modulecmd.tcl
+== ENV: ];
+== ENV: then
+== ENV: typeset
+== ENV: swfound=0;
+== ENV: unset
+== ENV: MODULES_USE_COMPAT_VERSION;
+== ENV: fi;
+== ENV: else
+== ENV: typeset
+== ENV: swname='compatibility';
+== ENV: if
+== ENV: [
+== ENV: -e
+== ENV: /usr/share/Modules/libexec/modulecmd-compat
+== ENV: ];
+== ENV: then
+== ENV: typeset
+== ENV: swfound=0;
+== ENV: MODULES_USE_COMPAT_VERSION=1;
+== ENV: export
+== ENV: MODULES_USE_COMPAT_VERSION;
+== ENV: fi;
+== ENV: fi;
+== ENV: if
+== ENV: [
+== ENV: $swfound
+== ENV: -eq
+== ENV: 0
+== ENV: ];
+== ENV: then
+== ENV: echo
+== ENV: "Switching
+== ENV: to
+== ENV: Modules
+== ENV: $swname
+== ENV: version";
+== ENV: source
+== ENV: /usr/share/Modules/init/bash;
+== ENV: else
+== ENV: echo
+== ENV: "Cannot
+== ENV: switch
+== ENV: to
+== ENV: Modules
+== ENV: $swname
+== ENV: version,
+== ENV: command
+== ENV: not
+== ENV: found";
+== ENV: return
+== ENV: 1;
+== ENV: fi
+== ENV: }
+== ENV: BASH_FUNC_cmsenv%%=()
+== ENV: {
+== ENV: eval
+== ENV: `scramv1
+== ENV: runtime
+== ENV: -sh`
+== ENV: }
+== ENV: BASH_FUNC_scl%%=()
+== ENV: {
+== ENV: if
+== ENV: [
+== ENV: "$1"
+== ENV: =
+== ENV: "load"
+== ENV: -o
+== ENV: "$1"
+== ENV: =
+== ENV: "unload"
+== ENV: ];
+== ENV: then
+== ENV: eval
+== ENV: "module
+== ENV: $@";
+== ENV: else
+== ENV: /usr/bin/scl
+== ENV: "$@";
+== ENV: fi
+== ENV: }
+== ENV: BASH_FUNC_ml%%=()
+== ENV: {
+== ENV: module
+== ENV: ml
+== ENV: "$@"
+== ENV: }
+== ENV: _=/usr/bin/env
+======== Current environment dump FINISHING ========
+======== Tarball initialization STARTING at Mon Apr 22 16:35:40 GMT 2024 ========
++ [[ XTrue == \X ]]
++ echo 'I am in runtime debug mode. I will not extract the sandbox'
+I am in runtime debug mode. I will not extract the sandbox
+++ pwd
+++ pwd
++ export PYTHONPATH=/tmp/rpradhan/tmp8e9tfofg/CRAB3.zip:/tmp/rpradhan/tmp8e9tfofg/WMCore.zip:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-future/0.18.2/lib/python3.8/site-packages:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-setuptools/39.2.0/lib/python3.8/site-packages:/cvmfs/cms.cern.ch/rucio/x86_64/rhel8/py3/current/lib/python3.6/site-packages:/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib:/cvmfs/cms.cern.ch/share/cms/crab/1.0/lib/prod
++ PYTHONPATH=/tmp/rpradhan/tmp8e9tfofg/CRAB3.zip:/tmp/rpradhan/tmp8e9tfofg/WMCore.zip:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-future/0.18.2/lib/python3.8/site-packages:/cvmfs/cms.cern.ch/COMP/slc7_amd64_gcc630/external/py3-setuptools/39.2.0/lib/python3.8/site-packages:/cvmfs/cms.cern.ch/rucio/x86_64/rhel8/py3/current/lib/python3.6/site-packages:/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib:/cvmfs/cms.cern.ch/share/cms/crab/1.0/lib/prod
++ set +x
+======== Tarball initialization FINISHING at Mon Apr 22 16:35:40 GMT 2024 ========
+==== Local directory contents dump STARTING ====
+PWD: /tmp/rpradhan/tmp8e9tfofg
+== DIR: AdjustSites.py
+== DIR: biglib
+== DIR: bin
+== DIR: CentralityTable_HFtowers200_DataPbPb_periHYDJETshape_run3v1302x04_offline_Nominal.db
+== DIR: cfipython
+== DIR: cmscp.py
+== DIR: cmscp.sh
+== DIR: CMSGroupMapper.py
+== DIR: CMSRunAnalysis.py
+== DIR: CMSRunAnalysis.sh
+== DIR: CMSRunAnalysis.tar.gz
+== DIR: config
+== DIR: dag_bootstrap.sh
+== DIR: datadiscovery.pkl
+== DIR: debug
+== DIR: debug_files.tar.gz
+== DIR: dry-run-sandbox.tar.gz
+== DIR: gWMS-CMSRunAnalysis.sh
+== DIR: input_args.json
+== DIR: input_dataset_duplicate_lumis.json
+== DIR: input_dataset_lumis.json
+== DIR: input_files.tar.gz
+== DIR: InputFiles.tar.gz
+== DIR: Job.submit
+== DIR: lib
+== DIR: PSetDump.py
+== DIR: PSet.pkl
+== DIR: PSet.py
+== DIR: python
+== DIR: RESTInteractions.py
+== DIR: run_and_lumis.tar.gz
+== DIR: RunJobs.dag
+== DIR: sandbox.tar.gz
+== DIR: ServerUtilities.py
+== DIR: site.ad
+== DIR: site.ad.json
+== DIR: splitting-summary.json
+== DIR: src
+== DIR: startup_environment.sh
+== DIR: submit_env.sh
+== DIR: taskinformation.pkl
+== DIR: TaskManagerRun.tar.gz
+== DIR: taskworkerconfig.pkl
+== DIR: TweakPSet.py
+== DIR: WMCore.zip
+==== Local directory contents dump FINISHING ====
+======== CMSRunAnalysis.py STARTING at Mon Apr 22 16:35:40 GMT 2024 ========
+Now running the CMSRunAnalysis.py job in /tmp/rpradhan/tmp8e9tfofg...
++ python3 CMSRunAnalysis.py -a sandbox.tar.gz --sourceURL=https://cmsweb.cern.ch/S3/crabcache_prod --jobNumber=0 --cmsswVersion=CMSSW_13_2_5_patch1 --scramArch=el8_amd64_gcc11 --inputFile=job_input_file_list_1.txt --runAndLumis=job_lumis_1.json --lheInputFiles=False --firstEvent=1 --firstLumi=None --lastEvent=11 --firstRun=None --seeding=AutomaticSeeding --scriptExe=None --eventsPerLumi=None --maxRuntime=-60 '--scriptArgs=[]' -o '{}'
+==== CMSRunAnalysis.py STARTING at Mon Apr 22 16:35:40 2024 UTC ====
+Local time : Mon Apr 22 18:35:40 2024
+==== Parameters Dump at Mon Apr 22 16:35:40 2024 UTC ===
+archiveJob:     sandbox.tar.gz
+sourceURL:      https://cmsweb.cern.ch/S3/crabcache_prod
+jobNumber:      0
+cmsswVersion:   CMSSW_13_2_5_patch1
+scramArch:      el8_amd64_gcc11
+inputFile       job_input_file_list_1.txt
+outFiles:       {}
+runAndLumis:    job_lumis_1.json
+lheInputFiles:  False
+firstEvent:     1
+firstLumi:      None
+eventsPerLumi:  None
+lastEvent:      11
+firstRun:       None
+seeding:        AutomaticSeeding
+userFiles:      None
+oneEventMode:   0
+scriptExe:      None
+scriptArgs:     []
+maxRuntime:     -60
+===================
+==== Sandbox untarring STARTING at Mon Apr 22 16:35:40 2024 UTC ====
+expanding sandbox.tar.gz in /tmp/rpradhan/tmp8e9tfofg
+
+==== Sandbox untarring FINISHED at Mon Apr 22 16:35:41 2024 UTC ====
+==== CMSSW Stack Execution STARTING at Mon Apr 22 16:35:41 2024 UTC ====
+==== SCRAM Obj CREATED at Mon Apr 22 16:35:41 2024 UTC ====
+==== SCRAM Obj INITIALIZED at Mon Apr 22 16:35:48 2024 UTC ====
+==== Extract user sandbox in CMSSW directory ====
+
+==== Tweak PSet at Mon Apr 22 16:35:48 2024 UTC ====
+Adding 40 files to 'fileNames' attr
+Adding 0 files to 'secondaryFileNames' attr
+skipEvents set to 0
+Executing sh tweakThePset.sh in Scram env
+tweakThePset.sh output:
+
+        Scram Command Diagnostic:
+        Command : scramv1
+        Architecture: el8_amd64_gcc11
+        Executed: sh tweakThePset.sh
+        Exit Status: 0
+        Stdout: will execute: edm_pset_tweak.py --input_pkl PSet.pkl --output_pkl PSet.pkl-tweaked --json PSetTweak.json --create_untracked_psets
+Set attribute process.CPU to CPU
+Set attribute process.Timing to Timing
+Set attribute process.SimpleMemoryCheck to SimpleMemoryCheck
+Set attribute process.source.fileNames to cms.untracked.vstring(
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_1.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_10.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_100.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_101.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_102.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_103.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_104.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_105.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_106.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_107.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_108.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_109.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_11.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_110.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_111.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_112.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_113.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_114.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_115.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_116.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_117.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_118.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_119.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_12.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_120.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_121.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_122.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_123.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_124.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_125.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_126.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_127.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_128.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_129.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_13.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_130.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_131.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_132.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_133.root',
+    '/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_134.root'
+)
+Set attribute process.source.firstEvent to cms.untracked.uint32(1)
+Set attribute process.source.skipEvents to cms.untracked.uint32(0)
+Set attribute process.maxEvents.input to cms.untracked.int32(11)
+Set attribute process.maxSecondsUntilRampdown.input to cms.untracked.int32(-60)
+will execute: cmssw_handle_random_seeds.py --input_pkl PSet.pkl --output_pkl PSet.pkl-seeds --seeding dummy
+Populared random numbers of RandomNumberService
+
+        Stderr: None 
+==== Tweak PSet Done at Mon Apr 22 16:35:50 2024 UTC ====
+==== CMSSW JOB Execution started at Mon Apr 22 16:35:50 2024 UTC ====
+==== Will execute stdbuf -oL -eL cmsRun -j FrameworkJobReport.xml PSet.py > cmsRun-stdout.log.tmp 2>&1
+==== CMSSW JOB Execution completed at Mon Apr 22 16:36:20 2024 UTC ====
+Application exit code: 0
+==== Execution FINISHED at Mon Apr 22 16:36:20 2024 UTC ====
+======== CMSSW OUTPUT STARTING ========
+NOTICE: lines longer than 3000 characters will be truncated
+== CMSSW: 22-Apr-2024 18:35:54 CEST  Initiating request to open file root://eoscms.cern.ch//eos/cms/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_1.root
+== CMSSW: %MSG-w XrdAdaptorInternal:  file_open 22-Apr-2024 18:35:56 CEST pre-events
+== CMSSW: Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_1.root?xrdcl.requuid=0ac581cd-ec36-4201-a4b3-1939b49fe2d8.
+== CMSSW: %MSG
+== CMSSW: %MSG-w XrdAdaptorInternal:  file_open 22-Apr-2024 18:35:56 CEST pre-events
+== CMSSW: Failed to open file at URL root://eoscms.cern.ch:1094//eos/cms/store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_1.root?tried=&xrdcl.requuid=611e8ba0-825d-4783-9c85-45711afa1335.
+== CMSSW: %MSG
+== CMSSW: 22-Apr-2024 18:35:56 CEST  Initiating request to open file root://xrootd-cms.infn.it//store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_1.root
+== CMSSW: 22-Apr-2024 18:36:08 CEST  Successfully opened file root://xrootd-cms.infn.it//store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_1.root
+== CMSSW: Begin processing the 1st record. Run 1, Event 10603, LumiSection 107 on stream 0 at 22-Apr-2024 18:36:18.093 CEST
+== CMSSW: 22-Apr-2024 18:36:19 CEST  Closed file root://xrootd-cms.infn.it//store/user/sarteaga/MinBias_PbPb_5p36TeV_Hydjet_v1/MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5/231023_223729/0000/stepRECO_1.root
+== CMSSW:
+== CMSSW: TrigReport ---------- Event  Summary ------------
+== CMSSW: TrigReport Events total = 11 passed = 11 failed = 0
+== CMSSW:
+== CMSSW: TrigReport ---------- Path   Summary ------------
+== CMSSW: TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+== CMSSW: TrigReport     1    0         11         11          0          0 p
+== CMSSW:
+== CMSSW: TrigReport -------End-Path   Summary ------------
+== CMSSW: TrigReport  Trig Bit#   Executed     Passed     Failed      Error Name
+== CMSSW:
+== CMSSW: TrigReport ---------- Modules in Path: p ------------
+== CMSSW: TrigReport  Trig Bit#    Visited     Passed     Failed      Error Name
+== CMSSW: TrigReport     1    0         11         11          0          0 tpClusterProducer
+== CMSSW: TrigReport     1    1         11         11          0          0 quickTrackAssociatorByHits
+== CMSSW: TrigReport     1    2         11         11          0          0 tpRecoAssocGeneralTracks
+== CMSSW: TrigReport     1    3         11         11          0          0 centralityBin
+== CMSSW: TrigReport     1    4         11         11          0          0 hltMB
+== CMSSW: TrigReport     1    5         11         11          0          0 HITrackCorrections
+== CMSSW:
+== CMSSW: TrigReport ---------- Module Summary ------------
+== CMSSW: TrigReport    Visited   Executed     Passed     Failed      Error Name
+== CMSSW: TrigReport         11         11         11          0          0 HITrackCorrections
+== CMSSW: TrigReport         11         11         11          0          0 TriggerResults
+== CMSSW: TrigReport         11         11         11          0          0 centralityBin
+== CMSSW: TrigReport         11         11         11          0          0 hltMB
+== CMSSW: TrigReport         11         11         11          0          0 p
+== CMSSW: TrigReport         11         11         11          0          0 quickTrackAssociatorByHits
+== CMSSW: TrigReport         11         11         11          0          0 tpClusterProducer
+== CMSSW: TrigReport         11         11         11          0          0 tpRecoAssocGeneralTracks
+== CMSSW:
+== CMSSW: TimeReport ---------- Event  Summary ---[sec]----
+== CMSSW: TimeReport       event loop CPU/event = 0.085575
+== CMSSW: TimeReport      event loop Real/event = 0.451648
+== CMSSW: TimeReport     sum Streams Real/event = 0.053222
+== CMSSW: TimeReport efficiency CPU/Real/thread = 0.189474
+== CMSSW:
+== CMSSW: TimeReport ---------- Path   Summary ---[Real sec]----
+== CMSSW: TimeReport  per event     per exec  Name
+== CMSSW: TimeReport   0.053004     0.053004  p
+== CMSSW: TimeReport  per event     per exec  Name
+== CMSSW:
+== CMSSW: TimeReport -------End-Path   Summary ---[Real sec]----
+== CMSSW: TimeReport  per event     per exec  Name
+== CMSSW: TimeReport  per event     per exec  Name
+== CMSSW:
+== CMSSW: TimeReport ---------- Modules in Path: p ---[Real sec]----
+== CMSSW: TimeReport  per event    per visit  Name
+== CMSSW: TimeReport   0.014342     0.014342  tpClusterProducer
+== CMSSW: TimeReport   0.000017     0.000017  quickTrackAssociatorByHits
+== CMSSW: TimeReport   0.012727     0.012727  tpRecoAssocGeneralTracks
+== CMSSW: TimeReport   0.000011     0.000011  centralityBin
+== CMSSW: TimeReport   0.000045     0.000045  hltMB
+== CMSSW: TimeReport   0.001265     0.001265  HITrackCorrections
+== CMSSW: TimeReport  per event    per visit  Name
+== CMSSW:
+== CMSSW: TimeReport ---------- Module Summary ---[Real sec]----
+== CMSSW: TimeReport  per event     per exec    per visit  Name
+== CMSSW: TimeReport   0.001265     0.001265     0.001265  HITrackCorrections
+== CMSSW: TimeReport   0.000003     0.000003     0.000003  TriggerResults
+== CMSSW: TimeReport   0.000011     0.000011     0.000011  centralityBin
+== CMSSW: TimeReport   0.000045     0.000045     0.000045  hltMB
+== CMSSW: TimeReport   0.000006     0.000006     0.000006  p
+== CMSSW: TimeReport   0.000017     0.000017     0.000017  quickTrackAssociatorByHits
+== CMSSW: TimeReport   0.014342     0.014342     0.014342  tpClusterProducer
+== CMSSW: TimeReport   0.012727     0.012727     0.012727  tpRecoAssocGeneralTracks
+== CMSSW: TimeReport  per event     per exec    per visit  Name
+== CMSSW:
+== CMSSW: T---Report end!
+== CMSSW:
+== CMSSW: TimeReport> Time report complete in 29.1345 seconds
+== CMSSW:  Time Summary:
+== CMSSW:  - Min event:   0.00962038
+== CMSSW:  - Max event:   0.220599
+== CMSSW:  - Avg event:   0.0530342
+== CMSSW:  - Total loop:  4.96808
+== CMSSW:  - Total init:  24.1649
+== CMSSW:  - Total job:   29.1345
+== CMSSW:  - Total EventSetup: 0.0010562
+== CMSSW:  - Total non-module: 3.10064
+== CMSSW:  Event Throughput: 2.21414 ev/s
+== CMSSW:  CPU Summary:
+== CMSSW:  - Total loop:     0.941289
+== CMSSW:  - Total init:     12.7637
+== CMSSW:  - Total extra:    0
+== CMSSW:  - Total children: 0.121947
+== CMSSW:  - Total job:      13.7065
+== CMSSW:  Processing Summary:
+== CMSSW:  - Number of Events:  11
+== CMSSW:  - Number of Global Begin Lumi Calls:  1
+== CMSSW:  - Number of Global Begin Run Calls: 1
+== CMSSW:
+======== CMSSW OUTPUT FINSHING ========
+==== Report file creation STARTING at Mon Apr 22 16:36:20 2024 UTC ====
+Sanitize FJR
+
+Job Exit Code from FrameworkJobReport.xml: 0 
+CONDITION FOR REPORTING READ BRANCHES WAS FALSE
+==== Job Exit Code from FrameworkJobReport.xml and Application exit code: 0 ====
+==== Checksum computation STARTING at Mon Apr 22 16:36:20 2024 UTC ====
+==== Checksum FINISHED at Mon Apr 22 16:36:20 2024 UTC ====
+== FileName: /tmp/rpradhan/tmp8e9tfofg/2023PbPb_RecoDebugMC_nhits0_Test.root  -  FileAdler32: c3d8496d- FileSize: 0.04697608947753906.3f MBytes
+== Execution site from site-local-config.xml: T2_CH_CERN
+==== Report file creation FINISHED at Mon Apr 22 16:36:20 2024 UTC ====
+==== CMSRunAnalysis.py FINISHED at Mon Apr 22 16:36:20 2024 UTC ====
+Local time : Mon Apr 22 18:36:20 2024
++ jobrc=0
++ set +x
+== The job had an exit code of 0 
+======== CMSRunAnalysis.py FINISHING at Mon Apr 22 16:36:20 GMT 2024 ========
+
+INFO 2024-04-22 16:36:20.388 UTC: 	 
+Using FileBased splitting
+INFO 2024-04-22 16:36:20.388 UTC: 	 Task consists of 25 jobs to process 1000 files
+INFO 2024-04-22 16:36:20.388 UTC: 	 The longest job will process 40 files, with an estimated processing time of 3 minutes
+INFO 2024-04-22 16:36:20.388 UTC: 	 The average job will process 40 files, with an estimated processing time of 3 minutes
+INFO 2024-04-22 16:36:20.388 UTC: 	 The shortest job will process 40 files, with an estimated processing time of 3 minutes
+INFO 2024-04-22 16:36:20.388 UTC: 	 The estimated memory requirement is 973 MB
+INFO 2024-04-22 16:36:20.388 UTC: 	 
+Timing quantities given below are ESTIMATES. Keep in mind that external factors
+such as transient file-access delays can reduce estimate reliability.
+INFO 2024-04-22 16:36:20.388 UTC: 	 
+For ~480 minute jobs, use:
+INFO 2024-04-22 16:36:20.388 UTC: 	 Data.unitsPerJob = 5430
+INFO 2024-04-22 16:36:20.388 UTC: 	 You will need to submit a new task
+INFO 2024-04-22 16:36:20.388 UTC: 	 
+Dry run requested: task paused
+To continue processing, use 'crab proceed'
+
+DEBUG 2024-04-22 16:36:20.389 UTC: 	 About to return
+INFO 2024-04-22 16:36:20.394 UTC: 	 Log file is /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/crab.log
+DEBUG 2024-04-22 16:36:56.672 UTC: 	 CRAB Client version: v3.240110
+DEBUG 2024-04-22 16:36:56.672 UTC: 	 Running on: Linux lxplus802.cern.ch 4.18.0-513.24.1.el8_9.x86_64 #1 SMP Thu Mar 14 14:20:09 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux 8.9 (Ootpa)
+DEBUG 2024-04-22 16:36:56.672 UTC: 	 Executing command: 'proceed'
+DEBUG 2024-04-22 16:36:56.672 UTC: 	 Found CRAB cache file /afs/cern.ch/user/r/rpradhan/.crab3
+DEBUG 2024-04-22 16:36:56.680 UTC: 	 Checking credentials
+DEBUG 2024-04-22 16:36:56.680 UTC: 	 Found proxy file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:36:56.680 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-04-22 16:36:56.680 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:36:57.214 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:36:57.214 UTC: 	 Getting proxy life time left
+DEBUG 2024-04-22 16:36:57.214 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:36:57.741 UTC: 	 output : 686920
+686920
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:36:57.742 UTC: 	 Proxy valid for 190:48:40 hours
+DEBUG 2024-04-22 16:36:57.742 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-04-22 16:36:57.830 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2024-04-22 16:36:57.830 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:36:58.333 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:36:58.333 UTC: 	 Getting myproxy life time left for aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-04-22 16:36:58.333 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-04-22 16:36:58.697 UTC: 	 output : username: aedebe478e169b108aa6ac09e06ba386bd2a2409
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 581:54:59  (24.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:36:58.698 UTC: 	 Myproxy is valid: 2094840
+DEBUG 2024-04-22 16:36:58.698 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: aedebe478e169b108aa6ac09e06ba386bd2a2409  - validity: 24 days, 5:54:00
+DEBUG 2024-04-22 16:36:58.698 UTC: 	 Command use: proceed
+DEBUG 2024-04-22 16:36:58.698 UTC: 	 Options use: []
+DEBUG 2024-04-22 16:36:58.698 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2024-04-22 16:36:58.744 UTC: 	 CRABClient version: v3.240110
+DEBUG 2024-04-22 16:36:58.744 UTC: 	 Instance is prod
+DEBUG 2024-04-22 16:36:58.744 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2024-04-22 16:36:58.744 UTC: 	 Command api workflow
+DEBUG 2024-04-22 16:36:58.744 UTC: 	 Continuing submission of task 240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+INFO 2024-04-22 16:36:58.744 UTC: 	 Sending the request to the server
+DEBUG 2024-04-22 16:36:58.744 UTC: 	 Submitting {'workflow': '240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun', 'subresource': 'proceed'} 
+DEBUG 2024-04-22 16:36:58.744 UTC: 	 Encoded data for curl request: workflow=240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun&subresource=proceed
+DEBUG 2024-04-22 16:36:58.796 UTC: 	 Result: {'desc': {'columns': ['tm_taskname', 'tm_task_status', 'tm_task_command', 'tm_user_role', 'tm_user_group', 'tm_task_failure', 'tm_split_algo', 'tm_split_args', 'tm_save_logs', 'tm_username', 'tm_user_dn', 'tm_arguments', 'tm_input_dataset', 'tm_dbs_url', 'tm_task_warnings', 'tm_publication', 'tm_user_webdir', 'tm_output_dataset', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'clusterid', 'tm_start_time', 'tw_name']}, 'result': [{'result': 'ok'}]}
+INFO 2024-04-22 16:36:58.796 UTC: 	 To check task progress, use 'crab status'
+INFO 2024-04-22 16:36:58.796 UTC: 	 Task continuation request successfully sent to the CRAB3 server
+INFO 2024-04-22 16:36:58.802 UTC: 	 Log file is /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/crab.log
+DEBUG 2024-04-22 16:37:31.978 UTC: 	 CRAB Client version: v3.240110
+DEBUG 2024-04-22 16:37:31.978 UTC: 	 Running on: Linux lxplus802.cern.ch 4.18.0-513.24.1.el8_9.x86_64 #1 SMP Thu Mar 14 14:20:09 EDT 2024 x86_64 x86_64 x86_64 GNU/Linux - Red Hat Enterprise Linux 8.9 (Ootpa)
+DEBUG 2024-04-22 16:37:31.978 UTC: 	 Executing command: 'status'
+DEBUG 2024-04-22 16:37:31.978 UTC: 	 Found CRAB cache file /afs/cern.ch/user/r/rpradhan/.crab3
+DEBUG 2024-04-22 16:37:31.982 UTC: 	 Checking credentials
+DEBUG 2024-04-22 16:37:31.982 UTC: 	 Found proxy file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:37:31.982 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-04-22 16:37:31.982 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:37:32.485 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:37:32.485 UTC: 	 Getting proxy life time left
+DEBUG 2024-04-22 16:37:32.486 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:37:32.992 UTC: 	 output : 686885
+686885
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:37:32.992 UTC: 	 Proxy valid for 190:48:05 hours
+DEBUG 2024-04-22 16:37:32.993 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-04-22 16:37:33.703 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2024-04-22 16:37:33.703 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u119946
+DEBUG 2024-04-22 16:37:34.205 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:37:34.205 UTC: 	 Getting myproxy life time left for aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-04-22 16:37:34.205 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l aedebe478e169b108aa6ac09e06ba386bd2a2409
+DEBUG 2024-04-22 16:37:34.466 UTC: 	 output : username: aedebe478e169b108aa6ac09e06ba386bd2a2409
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 581:54:23  (24.2 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-04-22 16:37:34.467 UTC: 	 Myproxy is valid: 2094840
+DEBUG 2024-04-22 16:37:34.467 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: aedebe478e169b108aa6ac09e06ba386bd2a2409  - validity: 24 days, 5:54:00
+DEBUG 2024-04-22 16:37:34.467 UTC: 	 Retrieving username ...
+DEBUG 2024-04-22 16:37:34.467 UTC: 	 Retrieving username from CRIC...
+DEBUG 2024-04-22 16:37:35.465 UTC: 	 username is rpradhan
+INFO 2024-04-22 16:37:36.230 UTC: 	 Rucio client intialized for account rpradhan
+DEBUG 2024-04-22 16:37:36.230 UTC: 	 Command use: status
+DEBUG 2024-04-22 16:37:36.230 UTC: 	 Options use: ['-d', 'crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun']
+DEBUG 2024-04-22 16:37:36.231 UTC: 	 Encoded data for curl request: subresource=version
+DEBUG 2024-04-22 16:37:36.284 UTC: 	 CRABClient version: v3.240110
+DEBUG 2024-04-22 16:37:36.284 UTC: 	 Instance is prod
+DEBUG 2024-04-22 16:37:36.284 UTC: 	 Server base url is cmsweb.cern.ch
+DEBUG 2024-04-22 16:37:36.284 UTC: 	 Command api workflow
+DEBUG 2024-04-22 16:37:36.285 UTC: 	 Encoded data for curl request: subresource=search&workflow=240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+DEBUG 2024-04-22 16:37:36.355 UTC: 	 Got information from server oracle database: {'desc': {'columns': ['tm_taskname', 'tm_activity', 'panda_jobset_id', 'tm_task_status', 'tm_task_command', 'tm_start_time', 'tm_start_injection', 'tm_end_injection', 'tm_task_failure', 'tm_job_sw', 'tm_job_arch', 'tm_input_dataset', 'tm_nonvalid_input_dataset', 'tm_use_parent', 'tm_site_whitelist', 'tm_site_blacklist', 'tm_split_algo', 'tm_split_args', 'tm_user_sandbox', 'tm_cache_url', 'tm_username', 'tm_user_dn', 'tm_user_vo', 'tm_user_role', 'tm_user_group', 'tm_publish_name', 'tm_publish_groupname', 'tm_asyncdest', 'tm_dbs_url', 'tm_publish_dbs_url', 'tm_publication', 'tm_outfiles', 'tm_tfile_outfiles', 'tm_edm_outfiles', 'tm_job_type', 'tm_generator', 'tm_events_per_lumi', 'tm_arguments', 'panda_resubmitted_jobs', 'tm_save_logs', 'tw_name', 'tm_user_infiles', 'tm_maxjobruntime', 'tm_numcores', 'tm_maxmemory', 'tm_priority', 'tm_output_dataset', 'tm_task_warnings', 'tm_user_webdir', 'tm_scriptexe', 'tm_scriptargs', 'tm_extrajdl', 'tm_asourl', 'tm_collector', 'tm_schedd', 'tm_dry_run', 'tm_user_files', 'tm_transfer_outputs', 'tm_output_lfn', 'tm_ignore_locality', 'tm_fail_limit', 'tm_one_event_mode', 'tm_secondary_input_dataset', 'tm_primary_dataset', 'tm_last_publication', 'tm_debug_files', 'clusterid', 'tm_asodb', 'tm_ignore_global_blacklist', 'tm_submitter_ip_addr', 'tm_totalunits', 'tm_ddm_reqid', 'tm_user_config', 'tm_transfer_container', 'tm_transfer_rule', 'tm_publish_rule', 'tm_multipub_rule']}, 'result': ['240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun', 'None', 'None', 'QUEUED', 'SUBMIT', '2024-04-22 16:34:08.365325', 'None', 'None', 'None', 'CMSSW_13_2_5_patch1', 'el8_amd64_gcc11', '/MinBias_PbPb_5p36TeV_Hydjet_v1/sarteaga-MinBias_PbPb_5p36TeV_Hydjet_RECODEBUG_v5-0e6c11377ba727d4466887a72ad361ed/USER', 'F', '0', '[]', '[]', 'FileBased', "{'halt_job_on_file_boundaries': False, 'splitOnRun': False, 'files_per_job': 40, 'runs': [], 'lumis': []}", '877a5fa7a89f4ba0b772cc2a1aa671cb2419534d05b93cd1e919a88b336550a1.tar.gz', 'https://cmsweb.cern.ch/S3/crabcache_prod', 'rpradhan', '/DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=rpradhan/CN=835109/CN=Raghunath Pradhan', 'cms', 'None', 'None', 'GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun-00000000000000000000000000000000', 'F', 'T2_CH_CERN', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSReader', 'https://cmsweb.cern.ch/dbs/prod/phys03/DBSWriter', 'F', '[]', "['2023PbPb_RecoDebugMC_nhits0_Test.root']", '[]', 'Analysis', 'pythia', 'None', '{}', 'None', 'F', 'crab-prod-tw01', '[]', '1250', '1', '2000', '10', 'None', '[]', 'None', 'None', '[]', '[]', 'None', 'cmsgwms-collector-global.cern.ch:9620,cmsgwms-collector-global.fnal.gov:9620', 'None', 'F', '[]', 'T', '/store/group/phys_heavyions/rpradhan/TrackingEffTables2022PbPbRun', 'F', 'None', 'F', 'None', 'MinBias_PbPb_5p36TeV_Hydjet_v1', 'None', 'fd11bebd3b40535058bbaf12a66873bb1230244cc9c362c19b59ce1c2206aa40.tar.gz', 'None', 'None', 'F', '188.184.73.32', '1000.0', 'None', '{"partialdataset": false, "requireaccelerator": false, "acceleratorparams": null, "inputblocks": null}', 'None', 'None', 'None', 'None']}
+INFO 2024-04-22 16:37:36.356 UTC: 	 CRAB project directory:		/afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+INFO 2024-04-22 16:37:36.356 UTC: 	 Task name:			240422_163408:rpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+INFO 2024-04-22 16:37:36.356 UTC: 	 Grid scheduler - Task Worker:	N/A yet - crab-prod-tw01
+INFO 2024-04-22 16:37:36.356 UTC: 	 Status on the CRAB server:	QUEUED on command SUBMIT
+INFO 2024-04-22 16:37:36.356 UTC: 	 Task URL to use for HELP:	https://cmsweb.cern.ch/crabserver/ui/task/240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun
+INFO 2024-04-22 16:37:36.365 UTC: 	 Dashboard monitoring URL:	https://monit-grafana.cern.ch/d/cmsTMDetail/cms-task-monitoring-task-view?orgId=11&var-user=rpradhan&var-task=240422_163408%3Arpradhan_crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun&from=1713800048000&to=now
+DEBUG 2024-04-22 16:37:36.365 UTC: 	 The task has not been submitted to the Grid scheduler yet. Not printing job information.
+INFO 2024-04-22 16:37:36.371 UTC: 	 Log file is /afs/cern.ch/work/r/rpradhan/Tracking_Studies/newCode_AfterRun3/new_TrackAna/CMSSW_13_2_5_patch1/src/HITrackingStudies/HITrackingStudies/test/TrackingStudies_Run3/crab_GeneralTracks_MCRecodebug_HITrackingCorrection_Cent0_5_10_nhits0_ptRes0p1_v1_newEff_dryrun/crab.log
